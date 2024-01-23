@@ -6,7 +6,7 @@ AR = ar
 CFLAGS = -g -Wall
 DFLAGS = -shared
 SFLAGS = rcs
-F = fPIC
+F = -fPIC
 
 #File variables
 MAIN = main.c
