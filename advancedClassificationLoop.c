@@ -13,6 +13,10 @@ int isArmstrong(int x){
     int power = numLength(x);
     int i;
 
+    if(x < 0){
+        return 0;
+    }
+
     while(temp > 0){
         for(i = 0; i < power; i++){
             base = base * (temp % 10);
@@ -27,6 +31,10 @@ int isArmstrong(int x){
 int isPalindrome(int x){
     int sum = 0;
     int temp = x;
+
+    if(x < 0){
+        return 0;
+    }
     while(temp > 0){
         sum = (sum * 10) + (temp % 10);
         temp /= 10;

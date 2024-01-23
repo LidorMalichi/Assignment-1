@@ -9,10 +9,16 @@ int armstrongRec(int, int)
 int palindromeRec(int, int);
 
 int isArmstrong(int x){
+    if(x < 0){
+        return 0;
+    }
     return ((x == armstrongRec(x, numLength(x))) ? 1:0);
 }
 
 int isPalindrome(int x){
+    if(x < 0){
+        return 0;
+    }
     return ((x == palindromeRec(x, 0)) ? 1:0);
 }
 

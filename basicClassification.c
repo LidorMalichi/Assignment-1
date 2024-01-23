@@ -11,7 +11,7 @@ int isPrime(int x){
 
     int i;
     //if x == 0 return 0
-    if(!X)
+    if(X <= 0)
     {
         return 0;
     }
@@ -30,7 +30,7 @@ int isStrong(int x){
     int temp = x;
     int sum = 0;
 
-    if(!x){
+    if(x <= 0){
         return 0;
     }
 
