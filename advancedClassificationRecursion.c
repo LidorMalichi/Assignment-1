@@ -5,24 +5,27 @@
 #include "NumClass.h"
 
 int numLength(int);
-int armstrongRec(int, int)
+int armstrongRec(int, int);
 int palindromeRec(int, int);
 
-int isArmstrong(int x){
+int isArmstrong(int x)
+{
     if(x < 0){
         return 0;
     }
     return ((x == armstrongRec(x, numLength(x))) ? 1:0);
 }
 
-int isPalindrome(int x){
+int isPalindrome(int x)
+{
     if(x < 0){
         return 0;
     }
     return ((x == palindromeRec(x, 0)) ? 1:0);
 }
 
-int armstrongRec(int x, int power){
+int armstrongRec(int x, int power)
+{
     int sum = 0;
     int i;
     if(x == 0){
@@ -37,7 +40,8 @@ int armstrongRec(int x, int power){
 
 }
 
-int palindromeRec(int x, int sum){
+int palindromeRec(int x, int sum)
+{
     if(x == 0){
         return sum;
     }
@@ -45,7 +49,8 @@ int palindromeRec(int x, int sum){
     return palindromeRec((x / 10), sum);
 }
 
-int numLength(int x){
+int numLength(int x)
+{
     int temp = 0;
     if(x == 0){
         return temp;

@@ -61,7 +61,7 @@ $(MAIN:.c=.o): $(MAIN) $(HEAD)
 	$(CC) $(CFLAGS) -c $<
 
 $(ALLSRC:.c=.o): $(ALLSRC) $(HEAD)
-	$(CC) $(CFLAGS) $(F) -c $<
+	$(CC) $(CFLAGS) $(F) -c $^
 
 #clean all
 clean:

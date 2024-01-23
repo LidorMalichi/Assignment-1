@@ -11,13 +11,13 @@ int isPrime(int x){
 
     int i;
     //if x == 0 return 0
-    if(X <= 0)
+    if(x <= 0)
     {
         return 0;
     }
 
-    for(i = 2; i*i <= n; i++){
-        if(n % i == 0){
+    for(i = 2; i*i <= x; i++){
+        if(x % i == 0){
             return 0;
         }
     }
